@@ -54,7 +54,7 @@ def make_banner(theme):
     mono = {"family": "monospace"}
     ax.text(0.55, 1.45, ">>> print(f\"Hi, I'm Íñigo\")", fontsize=15, color=t["accent"], fontdict=mono, va="center")
     ax.text(0.55, 1.08, "AI / ML Engineer  ·  Full Stack Developer", fontsize=13.5, color=t["text"], fontdict=mono, va="center")
-    ax.text(0.55, 0.70, "Currently open to GenAI / ML / Data Science / Backend roles", fontsize=11, color=t["accent2"], fontdict=mono, va="center")
+    ax.text(0.55, 0.70, "Currently open to GenAI / ML / Data Science / Full Stack roles", fontsize=11, color=t["accent2"], fontdict=mono, va="center")
 
     fig.savefig(os.path.join(OUT, f"banner-{theme}.svg"), transparent=False)
     plt.close(fig)
