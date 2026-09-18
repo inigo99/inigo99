@@ -10,7 +10,7 @@
 <br>
 
 <a href="https://github.com/inigo99">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&width=880&lines=Hi%2C+I'm+I%C3%B1igo+%F0%9F%91%8B;Software+Engineer+%7C+AI+%2F+ML+%2F+Full+Stack;Looking+for+my+next+challenge+in+GenAI+%2F+ML+%2F+Data+Science" alt="typing banner">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=25&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&width=880&lines=Hi%2C+I'm+I%C3%B1igo+%F0%9F%91%8B;Software+Engineer+%7C+AI+%2F+ML+%2F+Full+Stack;Looking+for+my+next+challenge+in+AI+%2F+ML+%2F+Data+Science" alt="typing banner">
 </a>
 
 <br>
