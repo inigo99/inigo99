@@ -2,11 +2,11 @@
   "_comment": "Hand-authored approximation of your language mix across public + past work repos (0-10 scale for the radar, percentages for the bar chart). Edit freely and re-run generate_assets.py.",
   "radar": {
     "Python": 9,
-    "Jupyter / Data Sci.": 7,
-    "Java": 6,
-    "JS / TypeScript": 6,
-    "SQL": 5,
-    "HTML / CSS": 5
+    "C++": 6,
+    "Java": 9,
+    "JS / TypeScript": 8,
+    "SQL": 9,
+    "HTML / CSS / PHP / React": 7
   },
   "bars": {
     "Python": 50,
