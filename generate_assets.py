@@ -178,6 +178,10 @@ def fetch_github_stats(username="inigo99"):
                     if l_res.status_code == 200:
                         for lang, bytes_cnt in l_res.json().items():
                             langs[lang] = langs.get(lang, 0) + bytes_cnt
+
+            # Ajuste manual para Jupyter Notebook, el output era grande y altereba la cifra real
+            if 'Jupyter Notebook' in langs: langs['Jupyter Notebook'] = 230400
+
             total = sum(langs.values())
             if total > 0:
                 sorted_langs = sorted(langs.items(), key=lambda x: x[1], reverse=True)
