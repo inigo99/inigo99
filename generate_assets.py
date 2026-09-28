@@ -13,6 +13,8 @@ edit those and re-run `python3 generate_assets.py` to redraw everything.
 import json
 import math
 import os
+import re
+import time
 
 import requests
 import matplotlib
@@ -210,6 +212,13 @@ def main():
 
     # single themed version is enough for the language bar chart
     make_lang_bars(langmix["bars"], "dark")
+
+    # update README.md to bust cache for the assets
+    with open("README.md", "r", encoding="utf-8") as f:
+        txt = f.read()
+    txt = re.sub(r'\?v=\d+', f'?v={int(time.time())}', txt)
+    with open("README.md", "w", encoding="utf-8") as f:
+        f.write(txt)
 
     print("Assets written to", OUT)
 
