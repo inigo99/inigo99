@@ -155,32 +155,42 @@ def make_lang_bars(bars, theme):
 def fetch_github_stats(username="inigo99"):
     headers = {"Accept": "application/vnd.github.v3+json"}
     token = os.environ.get("GITHUB_TOKEN")
-    if token:
-        headers["Authorization"] = f"token {token}"
-
+    if token: headers["Authorization"] = f"token {token}"
     try:
         user_res = requests.get(f"https://api.github.com/users/{username}", headers=headers)
         repos_res = requests.get(f"https://api.github.com/users/{username}/repos?per_page=100", headers=headers)
-
         if user_res.status_code == 200 and repos_res.status_code == 200:
-            user_data = user_res.json()
             repos_data = repos_res.json()
             
-            stars = sum(repo.get("stargazers_count", 0) for repo in repos_data)
-            
+            # Actualizar stats.json
             stats_path = os.path.join(HERE, "stats.json")
-            with open(stats_path, "r") as f:
-                stats = json.load(f)
-                
-            stats["public_repos"] = user_data.get("public_repos", stats.get("public_repos", 0))
-            stats["followers"] = user_data.get("followers", stats.get("followers", 0))
-            stats["stars"] = stars
+            with open(stats_path, "r") as f: stats = json.load(f)
+            stats["public_repos"] = user_res.json().get("public_repos", stats.get("public_repos", 0))
+            stats["followers"] = user_res.json().get("followers", stats.get("followers", 0))
+            stats["stars"] = sum(r.get("stargazers_count", 0) for r in repos_data)
+            with open(stats_path, "w") as f: json.dump(stats, f, indent=2)
             
-            with open(stats_path, "w") as f:
-                json.dump(stats, f, indent=2)
-            print("stats.json actualizado con éxito desde la API de GitHub.")
+            # Actualizar langmix.json
+            langs = {}
+            for r in repos_data:
+                if not r.get("fork"):
+                    l_res = requests.get(r["languages_url"], headers=headers)
+                    if l_res.status_code == 200:
+                        for lang, bytes_cnt in l_res.json().items():
+                            langs[lang] = langs.get(lang, 0) + bytes_cnt
+            total = sum(langs.values())
+            if total > 0:
+                sorted_langs = sorted(langs.items(), key=lambda x: x[1], reverse=True)
+                top = {k: int(v / total * 100) for k, v in sorted_langs[:4]}
+                top["Other"] = max(0, 100 - sum(top.values()))
+                langmix_path = os.path.join(HERE, "langmix.json")
+                with open(langmix_path, "r") as f: langmix = json.load(f)
+                langmix["bars"] = top
+                with open(langmix_path, "w") as f: json.dump(langmix, f, indent=2)
+                
+            print("Estadísticas y lenguajes actualizados correctamente.")
     except Exception as e:
-        print(f"No se pudieron actualizar las estadísticas web: {e}")
+        print(f"Error actualizando datos de la API: {e}")
 
 def main():
     fetch_github_stats("inigo99")
