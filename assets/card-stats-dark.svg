@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-09-22T10:58:15.855537</dc:date>
+    <dc:date>2026-09-28T12:30:00.027039</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -35,7 +35,7 @@ L 378 147.6
 L 378 10.8 
 L 10.8 10.8 
 z
-" clip-path="url(#p564293c16f)" style="fill: #161b22; stroke: #30363d; stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#pc28aa4ae6c)" style="fill: #161b22; stroke: #30363d; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <!-- Íñigo's GitHub stats -->
@@ -651,25 +651,33 @@ z
     </g>
    </g>
    <g id="text_4">
-    <!-- 1 -->
+    <!-- 2 -->
     <g style="fill: #58a6ff" transform="translate(148.742188 91.595313) scale(0.2 -0.2)">
      <defs>
-      <path id="DejaVuSans-Bold-14" d="M 750 831 
-L 1813 831 
-L 1813 3847 
-L 722 3622 
-L 722 4441 
-L 1806 4666 
-L 2950 4666 
-L 2950 831 
-L 4013 831 
-L 4013 0 
-L 750 0 
-L 750 831 
+      <path id="DejaVuSans-Bold-15" d="M 1844 884 
+L 3897 884 
+L 3897 0 
+L 506 0 
+L 506 884 
+L 2209 2388 
+Q 2438 2594 2547 2791 
+Q 2656 2988 2656 3200 
+Q 2656 3528 2436 3728 
+Q 2216 3928 1850 3928 
+Q 1569 3928 1234 3808 
+Q 900 3688 519 3450 
+L 519 4475 
+Q 925 4609 1322 4679 
+Q 1719 4750 2100 4750 
+Q 2938 4750 3402 4381 
+Q 3866 4013 3866 3353 
+Q 3866 2972 3669 2642 
+Q 3472 2313 2841 1759 
+L 1844 884 
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#DejaVuSans-Bold-14"/>
+     <use xlink:href="#DejaVuSans-Bold-15"/>
     </g>
    </g>
    <g id="text_5">
@@ -1008,7 +1016,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p564293c16f">
+  <clipPath id="pc28aa4ae6c">
    <rect x="0" y="0" width="388.8" height="158.4"/>
   </clipPath>
  </defs>

@@ -14,6 +14,7 @@ import json
 import math
 import os
 
+import requests
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -151,8 +152,38 @@ def make_lang_bars(bars, theme):
     fig.savefig(os.path.join(OUT, "metrics.languages.svg"), transparent=False)
     plt.close(fig)
 
+def fetch_github_stats(username="inigo99"):
+    headers = {"Accept": "application/vnd.github.v3+json"}
+    token = os.environ.get("GITHUB_TOKEN")
+    if token:
+        headers["Authorization"] = f"token {token}"
+
+    try:
+        user_res = requests.get(f"https://api.github.com/users/{username}", headers=headers)
+        repos_res = requests.get(f"https://api.github.com/users/{username}/repos?per_page=100", headers=headers)
+
+        if user_res.status_code == 200 and repos_res.status_code == 200:
+            user_data = user_res.json()
+            repos_data = repos_res.json()
+            
+            stars = sum(repo.get("stargazers_count", 0) for repo in repos_data)
+            
+            stats_path = os.path.join(HERE, "stats.json")
+            with open(stats_path, "r") as f:
+                stats = json.load(f)
+                
+            stats["public_repos"] = user_data.get("public_repos", stats.get("public_repos", 0))
+            stats["followers"] = user_data.get("followers", stats.get("followers", 0))
+            stats["stars"] = stars
+            
+            with open(stats_path, "w") as f:
+                json.dump(stats, f, indent=2)
+            print("stats.json actualizado con éxito desde la API de GitHub.")
+    except Exception as e:
+        print(f"No se pudieron actualizar las estadísticas web: {e}")
 
 def main():
+    fetch_github_stats("inigo99")
     skills = load("skills.json")["skills"]
     langmix = load("langmix.json")
     stats = load("stats.json")
