@@ -85,9 +85,12 @@ I'm **Íñigo Fernández Barrill**, a software engineer from Pamplona, Spain, sp
 
 <br>
 
-## 📌 Featured project
+## 📌 Projects
 
-**[CancerDetection](https://github.com/inigo99/CancerDetection)** — Master's thesis: *Multi-Task Learning for Breast Cancer Detection in Mammographies*. Compares image models (ResNet, EfficientNet, ConvNeXt, HRNet, DeiT), classical tabular models, and two Multi-Task Learning architectures on the RSNA Screening Mammography (Kaggle) dataset.
+| Project | What it is | Stack |
+| --- | --- | --- |
+| **[jobradar](https://github.com/inigo99/jobradar)** | Self-hosted job radar: searches job boards, scores every opening against your CV and writes a tailored one-page CV for each one, verified so nothing is invented. On [PyPI](https://pypi.org/project/jobradar-cv/) as `jobradar-cv`. | Python · FastAPI · SQLite · LLMs (Gemini, Anthropic, OpenAI, Ollama) · Playwright · Docker · GitHub Actions |
+| **[CancerDetection](https://github.com/inigo99/CancerDetection)** | Master's thesis: *Multi-Task Learning for Breast Cancer Detection in Mammographies*. Compares image models (ResNet, EfficientNet, ConvNeXt, HRNet, DeiT), classical tabular models and two Multi-Task Learning architectures on the RSNA Screening Mammography (Kaggle) dataset. | PyTorch · FastAI · Timm · scikit-learn |
 
 <br>
 
