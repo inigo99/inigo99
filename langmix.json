@@ -10,9 +10,9 @@
   },
   "bars": {
     "Python": 70,
-    "JavaScript": 15,
+    "JavaScript": 14,
     "Jupyter Notebook": 11,
     "HTML": 2,
-    "Other": 2
+    "Other": 3
   }
 }
