@@ -1,7 +1,7 @@
 {
   "_comment": "Self-rated, 0-10. Edit freely and re-run generate_assets.py to redraw the radar chart.",
   "skills": {
-    "LLMs": 6,
+    "LLMs": 8,
     "Machine Learning": 8,
     "Backend Dev": 9,
     "Full Stack": 8,
