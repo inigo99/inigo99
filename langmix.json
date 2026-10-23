@@ -9,10 +9,10 @@
     "HTML / CSS / PHP / React": 7
   },
   "bars": {
-    "Python": 64,
-    "JavaScript": 12,
-    "TypeScript": 12,
-    "Jupyter Notebook": 7,
-    "Other": 5
+    "Python": 40,
+    "HTML": 37,
+    "TypeScript": 8,
+    "JavaScript": 8,
+    "Other": 7
   }
 }
