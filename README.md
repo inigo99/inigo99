@@ -10,7 +10,7 @@
 <br>
 
 <a href="https://github.com/inigo99">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=25&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&width=880&lines=Hi%2C+I'm+I%C3%B1igo+%F0%9F%91%8B;Software+Engineer+%7C+AI+%2F+ML+%2F+Full+Stack;Looking+for+my+next+challenge+in+AI+%2F+ML+%2F+Data+Science" alt="typing banner">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=25&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&width=880&lines=Hi%2C+I'm+I%C3%B1igo+%F0%9F%91%8B;Lead+AI+%26+Software+Architect+%40+Voltis+Energ%C3%ADa;AI+%2F+ML+%2F+Full+Stack" alt="typing banner">
 </a>
 
 <br>
@@ -31,7 +31,8 @@
 
 I'm **Íñigo Fernández Barrill**, a software engineer from Pamplona, Spain, specialized in **AI / Machine Learning** and **Full Stack** development.
 
-- 💼 I worked as a **Full Stack Software Developer at [Orisha Commerce](https://www.orisha-commerce.com/) (Openbravo)**, Mutilva (Navarra), from September 2023 to March 2026:
+- 💼 Since November 2026, I'm **Lead AI & Software Architect at [Voltis Energía](https://voltisenergia.com)**.
+- 🏢 Previously, I worked as a **Full Stack Software Developer at [Orisha Commerce](https://www.orisha-commerce.com/) (Openbravo)**, Mutilva (Navarra), from September 2023 to March 2026:
   - Validated a three-agent LLM PoC fine-tuned with LoRA (customer interaction, database queries, RAG over POS docs); the discount and customer-interaction models went into production, with over 80% of interactions returning the expected result.
   - Designed and built REST APIs integrating the Openbravo ERP with external e-commerce platforms, serving 3,500+ POS terminals.
   - Cut production-reported errors in a critical ERP module by ~50% by introducing a unit/integration testing framework.
@@ -39,7 +40,7 @@ I'm **Íñigo Fernández Barrill**, a software engineer from Pamplona, Spain, sp
 - 🎓 **Master's Degree in Data Science and Machine Learning** — University of La Rioja (2022–2023). My thesis applied Multi-Task Learning to breast cancer detection in mammographies (F1 0.68 with only ~2% positive cases) → [`CancerDetection`](https://github.com/inigo99/CancerDetection).
 - 🎓 **Computer Engineering Degree**, specialization in Computing/AI — Public University of Navarre (2017–2022).
 - 🌍 Spanish (native) · English (C1) · French (B1).
-- 🚀 **Currently looking for opportunities** as a **GenAI, Machine Learning, Data Science or Backend (Python) Engineer**. Available immediately · Pamplona, Spain (CET) · open to remote. If you have something that could be a fit, let's talk!
+- 🚀 **Not looking for new opportunities at the moment** — always happy to connect and talk shop.
 
 <br>
 
